@@ -57,7 +57,7 @@ function getListOfMovies (event) {
                 }
                 
             } else {
-                indexMain.innerHTML = `<p class="search-fail-message">Unable to find what you’re        looking for. Please try another search.</p>`
+                indexMain.innerHTML = `<p class="search-fail-message">Unable to find what you’re looking for. Please try another search.</p>`
             }       
             
         })
