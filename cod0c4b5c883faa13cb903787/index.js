@@ -32,8 +32,8 @@ function displayMovieInSearch (movieObj) {
                                     <p class="movie-length">${movieObj.Runtime}</p>
                                     <p class="movie-genre">${movieObj.Genre}</p>
                                     <button class="movie-add-to-watchlist-button">
-                                        <img src="images/plus.png"          class="movie-add-to-watchlist-icon" onclick="addMovieToWatchlist(this)" data-id="${movieObj.imdbID}" id="${movieObj.imdbID}"/>
-                                        <p class="movie-add-to-watchlist-text">Watchlist</p>
+                                        <img src="images/plus.png" class="movie-add-to-watchlist-icon" onclick="addMovieToWatchlist(this)" data-id="${movieObj.imdbID}" id="${movieObj.imdbID}"/>
+                                        <p class="movie-add-to-watchlist-text" id=${movieObj.imdbID + "text"}>Watchlist</p>
                                     </button>
                                 </div>
                                 <p class="movie-description">${movieObj.Plot}</p> 
