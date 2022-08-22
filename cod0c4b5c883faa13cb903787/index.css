@@ -1,0 +1,280 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    background: black;
+}
+
+
+
+/*=============
+Typography 
+=============*/
+
+.title,
+.header-watchlist-link,
+.start-exploring-text,
+.search-fail-message {
+    font-weight: 700;
+}
+
+.title {
+    color: #ffffff;
+    font-size: 2.675rem;
+    line-height: 1.5rem;
+    letter-spacing: -0.045em;
+    margin: 0;
+}
+
+.header-watchlist-link,
+.search-input,
+.search-button {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+.header-watchlist-link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+.search-button {
+    color: #374151;
+}
+
+
+.movie-title {
+    font-size: 1.125rem;
+    line-height: 1.25rem;
+}
+
+.movie-rating,
+.movie-length,
+.movie-genre,
+.movie-add-to-watchlist-text,
+.movie-remove-from-watchlist-text,
+.read-more {
+    color: #111827;
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+}
+
+.movie-description {
+    color: #6B7280;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+.read-more {
+    display: inline;
+    margin: 0;
+    color: #272727;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.start-exploring-text,
+.search-fail-message,
+.watchlist-message {
+    color: #DFDDDD;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.watchlist-message {
+    line-height: 28.5px;
+    margin-bottom: 15px;
+}
+
+.start-exploring-text,
+.search-fail-message {
+    line-height: 20px;
+
+}
+
+.start-exploring-div {
+    text-align: center;
+}
+
+.start-exploring-text {
+    margin: 0;
+}
+
+start-exploring-icon {
+    margin-bottom: 8.75px;
+}
+
+
+/*============
+Layout
+=========== */
+
+.container {
+    width: 550px;
+}
+
+header {
+    background: url("images/header-background.png");
+    padding: 5em 2.625em 5em 2.625em;
+}
+
+.title-and-watchlist-link-holder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.searchbar {
+    position: absolute;
+    top: 160px;
+    left: 44px;
+    display: flex;
+}
+
+.search-icon-holder,
+.search-input,
+.search-button {
+    border: 1px solid #D1D5DB;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.search-icon-holder {
+    background: #ffffff;
+    width: 40px;
+    border-radius: 6px 0 0 6px;
+    border-right: none;
+    padding: 0.688em 0.625em 0.688em 0.938em;
+}
+
+.search-input {
+    background: #ffffff;
+    margin: 0;
+    width: 300px;
+    border-left: none;
+}
+
+.search-button {
+    background: #F9FAFB;
+    width: 120px;
+    border-radius: 0 6px 6px 0;
+}
+
+main {
+    background: #ffffff;
+    min-height: 64.9vh;
+}
+
+.index-main {
+    padding: 63px 44px 63px 44px;
+}
+
+.watchlist-main {
+    padding: 35px 44px 63px 44px;
+}
+
+.movie {
+    display: flex;
+    padding: 21px 0;
+    border-bottom: 1.5px solid #E5E7EB;
+}
+
+.movie-info-holder {
+    padding-left: 23px;
+}
+
+.movie-title,
+.movie-star-icon,
+.movie-length,
+.movie-genre,
+.movie-add-to-watchlist-button,
+.movie-add-to-watchlist-icon,
+.movie-add-to-watchlist-text,
+.movie-remove-from-watchlist-button,
+.movie-remove-from-watchlist-icon,
+.movie-remove-from-watchlist-text {
+    margin: 0;
+}
+
+.movie-title-and-rating {
+    display: flex;
+    align-items: center;
+}
+
+.movie-title {
+    margin-right: 8px;
+}
+
+
+.movie-star-icon {
+    margin: 0;
+    margin-right: 4px;
+}
+
+.movie-length-genre-and-watchlist {
+    display: flex;
+}
+
+.movie-length {
+    margin-right: 19px;
+}
+
+.movie-genre {
+    margin-right: 30px;
+}
+
+.movie-add-to-watchlist-button,
+.movie-remove-from-watchlist-button {
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+}
+
+.movie-add-to-watchlist-icon,
+.movie-remove-from-watchlist-icon {
+    margin-right: 5px;
+}
+
+.watchlist-link-to-search {
+    background: #ffffff;
+    border: none;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.watchlist-message-icon {
+    margin: 0;
+    margin-right: 7px;
+}
+
+.watchlist-add-message {
+    color: #363636;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.movie-poster {
+    width: 99px;
+    height: 147.41px;
+}
